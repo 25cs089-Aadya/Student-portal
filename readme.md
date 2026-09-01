@@ -20,7 +20,7 @@ A web-based student portal for managing academic information, communication, and
 
 StudentHub/
 │
-├── index.html
+├── home.html
 ├── login.html
 ├── dashboard.html
 ├── about.html
