@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudentHub | Events & Notices</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner"><a class="brand" href="notice.html" aria-label="StudentHub home"><span class="brand-logo">S</span><span>Student<span class="brand-accent">Hub</span></span></a>
+  <nav class="top-nav" aria-label="Main navigation"><a href="notice.html" aria-current="page">Events & Notices</a><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">☾ Dark mode</button></nav></div>
+</header>
+<main class="container">
+  <section class="hero" aria-labelledby="pageTitle"><span class="eyebrow">STUDENT PORTAL · PRACTICAL 06</span><h1 id="pageTitle">Explore campus events</h1><p>Discover workshops, seminars and competitions happening across campus. Browse live JSON data, and find what matters to you.</p><div class="hero-stats"><div><strong id="totalCount">—</strong><span>Total events</span></div><div><strong id="categoryCount">—</strong><span>Categories</span></div><div><strong>3</strong><span>JSON datasets</span></div></div></section>
+  <section class="panel" aria-labelledby="exploreTitle"><div class="section-heading"><div><span class="section-kicker">EVENT DIRECTORY</span><h2 id="exploreTitle">Events & notices</h2><p>Data fetched from <code>data/events.json</code>.</p></div><button class="secondary-button" id="reloadButton" type="button">↻ Reload data</button></div>
+    <div class="filters"><div class="field search-field"><label for="searchInput">Search events</label><input id="searchInput" type="search" placeholder="Search by title or description..." autocomplete="off"></div><div class="field"><label for="categoryFilter">Category</label><select id="categoryFilter"><option value="all">All categories</option></select></div><div class="field"><label for="sortSelect">Sort by</label><select id="sortSelect"><option value="newest">Date: newest first</option><option value="oldest">Date: oldest first</option><option value="name">Name: A to Z</option><option value="name-desc">Name: Z to A</option></select></div></div>
+    <div class="result-bar"><p id="resultCount" aria-live="polite">Loading event records…</p><button id="clearFilters" class="text-button" type="button">Clear filters</button></div>
+    <div id="loading" class="state loading-state" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span> Loading events from JSON…</div>
+    <div id="error" class="state error-state" role="alert" hidden></div>
+    <div id="eventContainer" class="event-grid" aria-live="polite"></div>
+    <nav id="pagination" class="pagination" aria-label="Event pages"></nav>
+  </section>
+  <section class="panel datasets" aria-labelledby="datasetsTitle"><div class="section-heading"><div><span class="section-kicker">MORE DATA</span><h2 id="datasetsTitle">StudentHub datasets</h2><p>All three JSON files are loaded using the Fetch API.</p></div></div><div class="dataset-tabs" role="group" aria-label="Select a dataset"><button type="button" class="dataset-tab active" data-dataset="students" aria-pressed="true">Student profiles</button><button type="button" class="dataset-tab" data-dataset="faqs" aria-pressed="false">FAQs</button></div><div id="datasetLoading" class="state" role="status">Loading datasets…</div><div id="datasetError" class="state error-state" role="alert" hidden></div><div id="datasetContainer" class="dataset-grid"></div></section>
+  <footer>StudentHub · Web Development Frameworks · Practical 6</footer>
+</main>
+</body>
+</html>

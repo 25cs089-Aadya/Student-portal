@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Shah",
+    "course": "CSE",
+    "year": 1,
+    "interest": "Frontend development"
+  },
+  {
+    "id": 2,
+    "name": "Diya Patel",
+    "course": "IT",
+    "year": 2,
+    "interest": "Data science"
+  },
+  {
+    "id": 3,
+    "name": "Vivaan Mehta",
+    "course": "CE",
+    "year": 3,
+    "interest": "Cyber security"
+  },
+  {
+    "id": 4,
+    "name": "Anaya Desai",
+    "course": "ECE",
+    "year": 4,
+    "interest": "Mobile applications"
+  },
+  {
+    "id": 5,
+    "name": "Reyansh Joshi",
+    "course": "ME",
+    "year": 1,
+    "interest": "Cloud computing"
+  },
+  {
+    "id": 6,
+    "name": "Ishita Trivedi",
+    "course": "CSE",
+    "year": 2,
+    "interest": "Machine learning"
+  },
+  {
+    "id": 7,
+    "name": "Kabir Bhatt",
+    "course": "IT",
+    "year": 3,
+    "interest": "UI/UX design"
+  },
+  {
+    "id": 8,
+    "name": "Myra Dave",
+    "course": "CE",
+    "year": 4,
+    "interest": "Open source"
+  },
+  {
+    "id": 9,
+    "name": "Arjun Parmar",
+    "course": "ECE",
+    "year": 1,
+    "interest": "Database systems"
+  },
+  {
+    "id": 10,
+    "name": "Sara Shah",
+    "course": "ME",
+    "year": 2,
+    "interest": "Competitive programming"
+  },
+  {
+    "id": 11,
+    "name": "Neil Pandya",
+    "course": "CSE",
+    "year": 3,
+    "interest": "Robotics"
+  },
+  {
+    "id": 12,
+    "name": "Riya Patel",
+    "course": "IT",
+    "year": 4,
+    "interest": "Web accessibility"
+  },
+  {
+    "id": 13,
+    "name": "Aditya Vyas",
+    "course": "CE",
+    "year": 1,
+    "interest": "Python programming"
+  },
+  {
+    "id": 14,
+    "name": "Kiara Shah",
+    "course": "ECE",
+    "year": 2,
+    "interest": "Software testing"
+  },
+  {
+    "id": 15,
+    "name": "Dev Mehta",
+    "course": "ME",
+    "year": 3,
+    "interest": "Computer networks"
+  }
+]
