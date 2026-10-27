@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StudentHub | Dashboard</title>
+<link href="practical4.css" rel="stylesheet"/></head>
+<body><aside aria-live="polite" class="p4-notification" id="p4Notice" role="status"><span>📢 Notice: Check your timetable and upcoming campus events.</span><button aria-label="Dismiss notification" id="p4Dismiss" type="button">✕</button></aside>
+<header>
+<h1>StudentHub</h1>
+<p>Student Dashboard</p>
+<div class="p4-toolbar"><button aria-controls="p4Navigation" aria-expanded="false" class="p4-menu-button" id="p4Menu" type="button">☰ Menu</button><button aria-label="Switch to dark mode" aria-pressed="false" class="p4-theme-button" id="p4Theme" type="button">🌙 Dark mode</button></div><nav aria-label="Main navigation" class="p4-nav" id="p4Navigation"><a href="home.html">Home</a><a href="aboutus.html">About</a><a aria-current="page" href="dashboard.html">Dashboard</a><a href="timetable.html">Time Table</a><a href="attendance.html">Attendance</a><a href="results.html">Results</a><a href="fees.html">Fees</a><a href="events.html">Events</a><a href="contactus.html">Contact</a><a href="login.html">Login</a></nav>
+</header>
+<hr/>
+<main>
+<section>
+<h2>Good morning, Student 👋</h2>
+<p>Here is a quick overview of your academic life.</p>
+</section>
+<section>
+<h2>Overview</h2>
+<table border="1" cellpadding="10">
+<tr>
+<th>Attendance</th>
+<th>CGPA</th>
+<th>Upcoming Events</th>
+</tr>
+<tr>
+<td>86%</td>
+<td>8.6</td>
+<td>3</td>
+</tr>
+</table>
+</section>
+<section>
+<h2>Quick Access</h2>
+<ul>
+<li><a href="timetable.html">View today's timetable</a></li>
+<li><a href="attendance.html">Check attendance</a></li>
+<li><a href="results.html">View results</a></li>
+<li><a href="fees.html">Check fees</a></li>
+</ul>
+</section>
+<section aria-labelledby="p4SliderHeading" class="p4-section"><h2 id="p4SliderHeading">StudentHub Highlights</h2><div aria-label="Academic highlights" aria-roledescription="carousel" class="p4-slider"><div aria-atomic="true" aria-live="polite" class="p4-slide-content"><span class="p4-eyebrow" id="p4SlideCounter">1 / 3</span><div aria-hidden="true" class="p4-slide-icon" id="p4SlideIcon">📚</div><h3 id="p4SlideTitle">All your academics in one place</h3><p id="p4SlideText">Quickly access results, attendance, and your weekly timetable.</p></div><div class="p4-slider-controls"><button aria-label="Previous highlight" id="p4Prev" type="button">❮ Previous</button><button aria-label="Next highlight" id="p4Next" type="button">Next ❯</button></div></div></section>
+<section class="p4-section"><h2>Important Message</h2><p>Open this message to view an academic reminder.</p><button class="p4-primary-button" id="p4OpenModal" type="button">View Important Message</button></section>
+<div class="p4-modal" hidden="" id="p4Modal"><div aria-labelledby="p4ModalTitle" aria-modal="true" class="p4-modal-box" role="dialog" tabindex="-1"><button aria-label="Close dialog" class="p4-modal-close" id="p4CloseModal" type="button">×</button><h2 id="p4ModalTitle">Important StudentHub Message</h2><p>Remember to check your attendance, results and timetable regularly.</p><p>Keep track of upcoming campus activities on the Events page.</p><button class="p4-primary-button" id="p4ModalOkay" type="button">Got it</button></div></div></main>
+<hr/>
+<footer>
+<p>© 2026 StudentHub</p>
+</footer>
+<script defer="True" src="practical4.js"></script></body>
+</html>
