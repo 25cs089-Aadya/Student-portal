@@ -1,0 +1,128 @@
+/* ==========================================================================
+   STUDENTHUB PORTAL - RESPONSIVE LAYOUT BREAKPOINTS
+   Description: Media queries targeting desktop, tablet, and mobile views
+   ========================================================================== */
+
+/* A. Tablet & Mobile Shared Screen layout (Up to 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 88%;
+    }
+    
+    .hero-section {
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .contact-grid {
+        gap: 2rem;
+    }
+    
+    .dashboard-content-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-layout-grid, .fees-layout-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-summary-sidebar, .fees-summary-sidebar {
+        margin-top: 1rem;
+    }
+
+    /* Responsive Hamburger Navigation Drawer (Tablet & Phone modes) */
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100vh;
+        background-color: var(--bg-secondary);
+        border-left: 1px solid var(--border-light);
+        padding: 5rem 1.75rem 2rem;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        box-shadow: none;
+    }
+    
+    .nav-bar.active {
+        right: 0;
+        box-shadow: -4px 0 16px rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        width: 100%;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        width: 100%;
+        display: block;
+    }
+    
+    .login-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.75rem;
+    }
+    
+    /* Toggle Hamburger Animation */
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger {
+        background-color: transparent;
+    }
+    
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger::before {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger::after {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+/* B. Mobile Phone Layout elements (Up to 768px) */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .hero-visual {
+        margin-top: 1.5rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-links {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}

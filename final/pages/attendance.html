@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Attendance</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Skip to Content Link for A11y -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">StudentHub</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav-bar" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="../prac%2014/dashboard.php" class="nav-link">Dashboard</a></li>
+                    <li><a href="timetable.html" class="nav-link">Time Table</a></li>
+                    <li><a href="attendance.html" class="nav-link active">Attendance</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="fees.html" class="nav-link">Fees</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../prac%2010/login.php" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../prac%2014/dashboard.php">Dashboard</a></li>
+                <li aria-current="page">Attendance</li>
+            </ol>
+        </nav>
+
+        <section class="attendance-section page-section">
+            <div class="section-header">
+                <h1>Subject-wise Attendance</h1>
+                <p class="section-lead">Check your lecture attendance ratio. Ensure you maintain at least 75% to qualify for end-semester exams.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>Attendance Status</h2>
+                <div class="table-responsive">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Subject Code</th>
+                                <th>Subject Name</th>
+                                <th>Lectures Attended</th>
+                                <th>Total Lectures</th>
+                                <th>Attendance %</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS-301</td>
+                                <td>Web Development</td>
+                                <td>27</td>
+                                <td>30</td>
+                                <td class="text-success font-weight-bold">90%</td>
+                                <td><span class="badge badge-success">Safe</span></td>
+                            </tr>
+                            <tr>
+                                <td>CS-302</td>
+                                <td>Data Structures</td>
+                                <td>25</td>
+                                <td>30</td>
+                                <td class="text-success font-weight-bold">83%</td>
+                                <td><span class="badge badge-success">Safe</span></td>
+                            </tr>
+                            <tr>
+                                <td>CS-303</td>
+                                <td>Computer Networks</td>
+                                <td>24</td>
+                                <td>30</td>
+                                <td class="text-success font-weight-bold">80%</td>
+                                <td><span class="badge badge-success">Safe</span></td>
+                            </tr>
+                            <tr>
+                                <td>CS-304</td>
+                                <td>Database Systems</td>
+                                <td>21</td>
+                                <td>30</td>
+                                <td class="text-warning font-weight-bold">70%</td>
+                                <td><span class="badge badge-warning">Low</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <aside class="aside-callout warning-callout">
+                <div class="callout-content">
+                    <h3>⚠️ Attendance Warning Policy</h3>
+                    <p>Students with subject attendance below <strong>75%</strong> will not be permitted to take the final laboratory and theory examinations. Please contact your subject tutor if you have missing attendance marks due to medical leaves.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">StudentHub</span>
+                </a>
+                <p>Academic information, made simple, elegant, and accessible.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><strong>Portal</strong></li>
+                    <li><a href="../prac%2014/dashboard.php">Dashboard</a></li>
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Support</strong></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="../prac%2010/login.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. Built with HTML5 & CSS3 for semantic accessibility.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

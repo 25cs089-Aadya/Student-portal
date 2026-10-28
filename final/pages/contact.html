@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Contact Support</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Skip to Content Link for A11y -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">StudentHub</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav-bar" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="../prac%2014/dashboard.php" class="nav-link">Dashboard</a></li>
+                    <li><a href="timetable.html" class="nav-link">Time Table</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="fees.html" class="nav-link">Fees</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="../prac%2010/login.php" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li><a href="../index.html">Home</a></li>
+                <li aria-current="page">Contact Support</li>
+            </ol>
+        </nav>
+
+        <!-- Form Layout Section -->
+        <section class="contact-section page-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h1>Get in Touch</h1>
+                    <p class="section-lead">Have questions or run into technical issues? We're here to assist you.</p>
+                    <p>Submit a request using the form, and our administrative and support team will respond to you within 24–48 hours.</p>
+                    
+                    <div class="contact-cards-container">
+                        <div class="contact-detail-card">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <h4>Campus Office</h4>
+                                <p>Admin Block, Level 2, Room 204</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-card">
+                            <span class="detail-icon">✉️</span>
+                            <div>
+                                <h4>Support Email</h4>
+                                <p>support@studenthub.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="styled-form" id="contact-form">
+                        <fieldset>
+                            <legend>Send a Message</legend>
+
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required-indicator">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required-indicator">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@studenthub.edu" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required-indicator">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="academics">Academics & Timetables</option>
+                                    <option value="finance">Fees & Payments</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="other">General Inquiries</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="required-indicator">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">StudentHub</span>
+                </a>
+                <p>Academic information, made simple, elegant, and accessible.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><strong>Portal</strong></li>
+                    <li><a href="../prac%2014/dashboard.php">Dashboard</a></li>
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Support</strong></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="../prac%2010/login.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. Built with HTML5 & CSS3 for semantic accessibility.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

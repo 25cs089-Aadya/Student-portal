@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "How do I register for an event?",
+    "answer": "Open the event listing and contact the student coordinator for registration details.",
+    "category": "Events"
+  },
+  {
+    "id": 2,
+    "question": "Where can I view my timetable?",
+    "answer": "Visit the Timetable page in StudentHub.",
+    "category": "Academics"
+  },
+  {
+    "id": 3,
+    "question": "How can I check my attendance?",
+    "answer": "Use the Attendance page of the student portal.",
+    "category": "Academics"
+  },
+  {
+    "id": 4,
+    "question": "How can I reset my password?",
+    "answer": "Contact the IT help desk or use the password reset feature if available.",
+    "category": "Accounts"
+  },
+  {
+    "id": 5,
+    "question": "Where can I see results?",
+    "answer": "Open the Results page in StudentHub.",
+    "category": "Academics"
+  },
+  {
+    "id": 6,
+    "question": "How are workshops announced?",
+    "answer": "Workshops are posted in the Events and Notices section.",
+    "category": "Events"
+  },
+  {
+    "id": 7,
+    "question": "Can I update my student profile?",
+    "answer": "Contact your departmental administrator to request corrections.",
+    "category": "Accounts"
+  },
+  {
+    "id": 8,
+    "question": "Where are exam schedules published?",
+    "answer": "Check the notice board and your academic department announcements.",
+    "category": "Academics"
+  },
+  {
+    "id": 9,
+    "question": "Who can join coding competitions?",
+    "answer": "Eligibility depends on the individual competition announcement.",
+    "category": "Events"
+  },
+  {
+    "id": 10,
+    "question": "How do I contact support?",
+    "answer": "Use the Contact Us page to reach the support team.",
+    "category": "Support"
+  },
+  {
+    "id": 11,
+    "question": "Where can I find assignment deadlines?",
+    "answer": "Refer to course announcements and the student dashboard.",
+    "category": "Academics"
+  },
+  {
+    "id": 12,
+    "question": "What if an event date changes?",
+    "answer": "The updated date should be published in the notice board.",
+    "category": "Events"
+  },
+  {
+    "id": 13,
+    "question": "Are event registrations free?",
+    "answer": "Fees, if any, depend on the event and are listed in its announcement.",
+    "category": "Events"
+  },
+  {
+    "id": 14,
+    "question": "Can I suggest a new event?",
+    "answer": "Reach out to your club coordinator or student council.",
+    "category": "Events"
+  },
+  {
+    "id": 15,
+    "question": "Why are event records not loading?",
+    "answer": "Use Live Server and confirm the JSON files are in the data folder.",
+    "category": "Technical"
+  }
+]

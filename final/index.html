@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Skip to Content Link for A11y -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">StudentHub</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav-bar" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pages/about.html" class="nav-link">About</a></li>
+                    <li><a href="prac%2014/dashboard.php" class="nav-link">Dashboard</a></li>
+                    <li><a href="pages/timetable.html" class="nav-link">Time Table</a></li>
+                    <li><a href="pages/attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="pages/results.html" class="nav-link">Results</a></li>
+                    <li><a href="pages/fees.html" class="nav-link">Fees</a></li>
+                    <li><a href="pages/events.html" class="nav-link">Events</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="prac%2010/login.php" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Everything you need, <br><span class="highlight-text">all in one place.</span></h1>
+                <p class="hero-description">
+                    StudentHub brings your academic schedules, attendance, grades, outstanding fees, and campus events together into a sleek, unified, and easy-to-use experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="prac%2014/dashboard.php" class="btn btn-primary">Explore your dashboard →</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Visual design accent or glassmorphic decoration -->
+                <div class="floating-card accent-card">
+                    <div class="floating-header">
+                        <span class="card-icon">⚡</span>
+                        <h4>Quick Stats</h4>
+                    </div>
+                    <div class="stat-row">
+                        <span>Attendance</span>
+                        <strong class="text-success">86%</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>GPA</span>
+                        <strong class="text-info">8.6</strong>
+                    </div>
+                </div>
+                <div class="glass-bg-accent"></div>
+            </div>
+        </section>
+
+        <!-- Feature Grid (Essentials) -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2>Student Essentials</h2>
+                <p>Quick access to your core academic resources</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon-wrapper timetable-color">📅</div>
+                    <h3>Time Table</h3>
+                    <p>Keep your weekly classes organized, check rooms, and track lecture timings easily.</p>
+                    <a href="pages/timetable.html" class="feature-link">View timetable &rarr;</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon-wrapper attendance-color">✓</div>
+                    <h3>Attendance</h3>
+                    <p>Track your subject-wise attendance throughout the semester to ensure you stay above 75%.</p>
+                    <a href="pages/attendance.html" class="feature-link">Check attendance &rarr;</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon-wrapper results-color">★</div>
+                    <h3>Results</h3>
+                    <p>View your academic performance, semester grades, and cumulative CGPA directly.</p>
+                    <a href="pages/results.html" class="feature-link">View results &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="features-section" aria-labelledby="portal-tools-heading">
+            <div class="section-header"><h2 id="portal-tools-heading">StudentHub Portal</h2><p>Open the connected PHP and MySQL modules</p></div>
+            <div class="features-grid">
+                <article class="feature-card"><div class="feature-icon-wrapper timetable-color">🔐</div><h3>Account</h3><p>Sign in with your Student or Admin account, or register a new student.</p><a class="feature-link" href="prac%2010/login.php">Sign in →</a> <a class="feature-link" href="prac%209/register.html">Register →</a></article>
+                <article class="feature-card"><div class="feature-icon-wrapper attendance-color">📊</div><h3>Dashboard</h3><p>View your role-based dashboard and admin statistics.</p><a class="feature-link" href="prac%2014/dashboard.php">Open dashboard →</a></article>
+                <article class="feature-card"><div class="feature-icon-wrapper results-color">📅</div><h3>Event Management</h3><p>Manage events and posters, or use the Fetch API interface (Admin only).</p><a class="feature-link" href="prac%2012/events.php">Manage events →</a></article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">StudentHub</span>
+                </a>
+                <p>Academic information, made simple, elegant, and accessible.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><strong>Portal</strong></li>
+                    <li><a href="prac%2014/dashboard.php">Dashboard</a></li>
+                    <li><a href="pages/timetable.html">Time Table</a></li>
+                    <li><a href="pages/attendance.html">Attendance</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Support</strong></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/contact.html">Contact Support</a></li>
+                    <li><a href="prac%2010/login.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. Built with HTML5 & CSS3 for semantic accessibility.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="js/main.js"></script>
+</body>
+</html>

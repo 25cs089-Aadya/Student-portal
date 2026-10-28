@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../css/studenthub-unified.css">
+</head>
+<body class="hub-unified"><header class="hub-topbar"><div class="hub-topbar-inner"><a class="hub-brand" href="../index.html">🎓 StudentHub</a><nav class="hub-links" aria-label="StudentHub navigation"><a href="../index.html">Home</a><a href="../pages/timetable.html">Time Table</a><a href="../pages/attendance.html">Attendance</a><a href="../pages/events.html">Events</a><a href="../prac%2014/dashboard.php">Dashboard</a><a class="hub-login" href="../prac%2010/login.php">Login</a></nav></div></header>
+  <header>
+    <h1>StudentHub</h1>
+    <p>Student Portal | Practical 7</p>
+  </header>
+
+  <main class="container">
+    <h2>Student Registration Form</h2>
+    <p class="description">Enter your details to register. This form is processed using PHP.</p>
+
+    <form action="process_register.php" method="POST">
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" maxlength="10" pattern="[0-9]{10}" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="At least 8 characters" autocomplete="new-password" required>
+      </div>
+
+      <div class="field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" autocomplete="new-password" required>
+      </div>
+
+      <div class="field">
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select Course --</option>
+          <option value="CSE">Computer Science Engineering</option>
+          <option value="IT">Information Technology</option>
+          <option value="CE">Computer Engineering</option>
+          <option value="ECE">Electronics and Communication</option>
+          <option value="ME">Mechanical Engineering</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="year">Year</label>
+        <select id="year" name="year" required>
+          <option value="">-- Select Year --</option>
+          <option value="1">First Year</option>
+          <option value="2">Second Year</option>
+          <option value="3">Third Year</option>
+          <option value="4">Fourth Year</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label class="inline"><input type="radio" name="gender" value="Male" required> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="inline"><input type="radio" name="gender" value="Other"> Other</label>
+      </fieldset>
+
+      <label class="terms"><input type="checkbox" name="terms" value="yes" required> I agree to the Terms and Conditions.</label>
+      <button type="submit">Register</button>
+    </form>
+    <p class="note">Practical 5 checked details using JavaScript. Practical 7 checks them again on the server using PHP.</p>
+  </main>
+</body>
+</html>

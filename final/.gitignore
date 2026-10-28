@@ -1,0 +1,9 @@
+# Local database exports and real user data
+*.sql.bak
+*database_export*.sql
+*studenthub_db_export*.sql
+**/data/registrations.csv
+**/uploads/events/*
+!**/uploads/events/.gitignore
+!**/uploads/events/.htaccess
+.env

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Campus Events</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Skip to Content Link for A11y -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">StudentHub</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-navigation" class="nav-bar" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="../prac%2014/dashboard.php" class="nav-link">Dashboard</a></li>
+                    <li><a href="timetable.html" class="nav-link">Time Table</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="results.html" class="nav-link">Results</a></li>
+                    <li><a href="fees.html" class="nav-link">Fees</a></li>
+                    <li><a href="events.html" class="nav-link active">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../prac%2010/login.php" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../prac%2014/dashboard.php">Dashboard</a></li>
+                <li aria-current="page">Events</li>
+            </ol>
+        </nav>
+
+        <section class="events-section page-section">
+            <div class="section-header">
+                <h1>Campus Events & Workshops</h1>
+                <p class="section-lead">Explore and register for upcoming seminars, hackathons, and activities organized at the campus.</p>
+            </div>
+
+            <p><a class="btn btn-primary" href="../prac%2012/events.php">Admin: Manage Events &amp; Posters</a> <a class="btn btn-secondary" href="../prac%2013/index.html">Admin: Fetch API Events</a></p><p><small>Event management requires an Admin login. The event cards below are sample homepage content.</small></p>
+            <!-- Events Grid (uses CSS Grid) -->
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <article class="event-card">
+                    <div class="event-badge cultural">Cultural</div>
+                    <div class="event-card-content">
+                        <h3>Campus Hackathon 2026</h3>
+                        <p class="event-time">📅 18th August, 09:00 AM | 📍 Main Seminar Hall</p>
+                        <p class="event-desc">
+                            A 24-hour coding challenge for developers, designers, and innovators. Team up and build solutions to real-world problems.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="registration-status warning">Closing Soon!</span>
+                            <button class="btn btn-primary btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event 2 -->
+                <article class="event-card">
+                    <div class="event-badge workshop">Workshop</div>
+                    <div class="event-card-content">
+                        <h3>Web Accessibility (A11y) Seminar</h3>
+                        <p class="event-time">📅 22nd August, 02:00 PM | 📍 Lab 2</p>
+                        <p class="event-desc">
+                            Learn the essentials of building accessible web portals. Explore semantic tags, ARIA attributes, and keyboard navigation.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="registration-status success">Open</span>
+                            <button class="btn btn-primary btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event 3 -->
+                <article class="event-card">
+                    <div class="event-badge guest-lecture">Guest Lecture</div>
+                    <div class="event-card-content">
+                        <h3>AI in Modern Software Engineering</h3>
+                        <p class="event-time">📅 25th August, 11:00 AM | 📍 Conference Room B</p>
+                        <p class="event-desc">
+                            Guest lecture by industry experts exploring how agentic coding assistants are transforming development workflows.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="registration-status success">Open</span>
+                            <button class="btn btn-primary btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">StudentHub</span>
+                </a>
+                <p>Academic information, made simple, elegant, and accessible.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><strong>Portal</strong></li>
+                    <li><a href="../prac%2014/dashboard.php">Dashboard</a></li>
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="attendance.html">Attendance</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Support</strong></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="../prac%2010/login.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudentHub. Built with HTML5 & CSS3 for semantic accessibility.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
