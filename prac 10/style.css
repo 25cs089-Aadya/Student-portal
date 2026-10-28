@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0 16px 35px; font: 16px Arial, sans-serif; color: #26364a; background: #f2f5fa; }
+header { text-align: center; padding: 30px 5px 14px; }
+header h1 { margin: 0; color: #224b80; }
+header p, .help { color: #65758a; }
+.card { max-width: 650px; margin: 20px auto; background: white; padding: 30px; border: 1px solid #d8e0eb; border-radius: 10px; }
+.card.small { max-width: 430px; }
+h2 { margin-top: 0; color: #224b80; }
+label { display: block; font-weight: bold; margin: 16px 0 7px; }
+input { width: 100%; padding: 11px; font: inherit; border: 1px solid #b6c1d0; border-radius: 5px; }
+button, .button-link { display: inline-block; margin-top: 20px; padding: 11px 17px; border: 0; border-radius: 5px; background: #285b9e; color: white; text-decoration: none; font: inherit; cursor: pointer; }
+button { width: 100%; }
+button:hover, .button-link:hover { background: #194578; }
+.message { padding: 11px; background: #fff0ed; border: 1px solid #edc3bc; border-radius: 5px; }
+.panel { background: #f3f7fc; border: 1px solid #dce5ef; border-radius: 6px; padding: 15px; margin-top: 15px; }
+a { color: #285b9e; }
